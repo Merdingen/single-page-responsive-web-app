@@ -1,0 +1,33 @@
+.guestbook-list {
+	background: #222222;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 25px 20px;
+	max-height: 465px;
+	overflow-y: scroll;
+}
+
+.guestbook-list-card {
+	background: #ffffff;
+	margin: 10px 0;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.guestbook-list-card-header {
+
+}
+
+.guestbook-list::-webkit-scrollbar {
+	width: 1em;
+}
+
+.guestbook-list::-webkit-scrollbar-track {
+	background-color: #ececec;
+}
+
+.guestbook-list::-webkit-scrollbar-thumb {
+	background-color: darkgrey;
+	outline: 1px solid slategrey;
+}

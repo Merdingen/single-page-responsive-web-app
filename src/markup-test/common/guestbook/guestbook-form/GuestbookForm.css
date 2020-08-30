@@ -1,0 +1,14 @@
+.guestbook-form {
+	background: #222222;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 0px;
+}
+
+.form-submit-button-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 15px 0;
+}

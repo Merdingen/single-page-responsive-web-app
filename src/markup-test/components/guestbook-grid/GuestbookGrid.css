@@ -1,0 +1,26 @@
+.guestbook-grid {
+	min-height: 500px;
+	background: #2f2f2f;
+	padding: 30px 5%;
+}
+
+.guestbook-form-container {
+	padding: 35px 20px !important;
+}
+
+.guestbook-list-container {
+	padding: 35px 20px !important;
+}
+
+.guestbook-grid-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.guestbook-grid-header > h2 {
+	color: #cacaca;
+	font-family: Candara, sans-serif;
+	font-size: 50px;
+	font-weight: bold;
+}

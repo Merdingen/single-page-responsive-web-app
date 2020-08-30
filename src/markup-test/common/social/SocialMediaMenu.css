@@ -1,0 +1,43 @@
+.social-hexagon {
+	position: relative;
+	width: 50px;
+	height: 28.87px;
+	background-color: #2e2e2e;
+	margin: 14.43px 0;
+}
+
+.social-hexagon:before,
+.social-hexagon:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+}
+
+.social-hexagon:before {
+	bottom: 100%;
+	border-bottom: 14.43px solid #2e2e2e;
+}
+
+.social-hexagon:after {
+	top: 100%;
+	width: 0;
+	border-top: 14.43px solid #2e2e2e;
+}
+
+.social-hexagon-container {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.social-icon-container {
+	background: #484848;
+	height: 100%;
+	width: 28px;
+	position: absolute;
+	left: 23%;
+	border-radius: 14px;
+}

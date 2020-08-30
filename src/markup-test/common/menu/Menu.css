@@ -1,0 +1,132 @@
+.menu-container {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0 !important;
+}
+
+.menu-header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.menu-header ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+}
+
+.menu-header li a {
+	display: block;
+	padding: 5px 20px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.menu-header li a:hover,
+.menu-header .menu-btn:hover {
+	color: #f4f4f4;
+}
+
+/* menu */
+
+.menu-header .menu {
+	clear: both;
+	max-height: 0;
+	transition: max-height .2s ease-out;
+}
+
+.menu-header .menu li {
+	height: 25px;
+}
+
+/* menu icon */
+
+.menu-header .menu-icon {
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	padding: 45px 20px;
+	position: relative;
+	user-select: none;
+	margin: 0;
+}
+
+.menu-header .menu-icon .navicon {
+	background: #fff;
+	display: block;
+	height: 2px;
+	position: relative;
+	transition: background .2s ease-out;
+	width: 30px;
+}
+
+.menu-header .menu-icon .navicon:before,
+.menu-header .menu-icon .navicon:after {
+	background: #ffffff;
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+	transition: all .2s ease-out;
+	width: 100%;
+}
+
+.menu-header .menu-icon .navicon:before {
+	top: 8px;
+}
+
+.menu-header .menu-icon .navicon:after {
+	top: -8px;
+}
+
+/* menu btn */
+
+.menu-header .menu-btn {
+	display: none;
+}
+
+.menu-header .menu-btn:checked ~ .menu {
+	max-height: 160px;
+}
+
+.menu-header .menu-btn:checked ~ .menu-icon .navicon {
+	background: transparent;
+}
+
+.menu-header .menu-btn:checked ~ .menu-icon .navicon:before {
+	transform: rotate(-45deg);
+}
+
+.menu-header .menu-btn:checked ~ .menu-icon .navicon:after {
+	transform: rotate(45deg);
+}
+
+.menu-header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.menu-header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+	top: 0;
+}
+
+@media (min-width: 1000px) {
+	.menu-header li {
+		float: left;
+	}
+	.menu-header li a {
+		padding: 0 30px;
+		font-size: 20px;
+		font-family: Candara, sans-serif;
+		font-weight: bold;
+		color: #000000;
+	}
+	.menu-header .menu {
+		clear: none;
+		float: right;
+		max-height: none;
+	}
+	.menu-header .menu-icon {
+		display: none;
+	}
+}

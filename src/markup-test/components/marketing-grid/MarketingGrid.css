@@ -1,0 +1,94 @@
+.marketing-grid {
+	min-height: 800px;
+}
+
+.marketing-grid-header {
+	background: #f8f8f8;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 70px 20px 10px;
+}
+
+.marketing-grid-header > h2 {
+	color: #cdcdcd;
+	font-family: Candara, sans-serif;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.marketing-container {
+
+}
+
+.marketing-grid-child-container {
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+	height: 450px;
+	padding: 10px 25px;
+}
+
+.marketing-grid-child-container > .child-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	border-bottom: 1px solid #9e9e9e;
+}
+
+.marketing-grid-child-container > .info-button-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.marketing-grid-child {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	padding: 5px 0;
+}
+
+.marketing-grid-child > .icon-container, .title-container, .subtitle-container {
+	padding: 5px 10px;
+}
+
+.marketing-grid-child > .title-container > h4 {
+	font-size: 20px;
+	font-family: Candara, sans-serif;
+	font-weight: bold;
+	margin: 0;
+}
+
+.child-wrapper > .subtitle-container > h4 {
+	font-size: 20px;
+	font-family: Candara, sans-serif;
+	line-height: 30px;
+	margin: 0;
+}
+
+.marketing-cell {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.triangle-center {
+	position: relative;
+}
+
+.triangle-center:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -50px;
+	width: 0;
+	z-index: 1;
+	height: 0;
+	border-top: solid 50px #b20300;
+	border-left: solid 50px transparent;
+	border-right: solid 50px transparent;
+}

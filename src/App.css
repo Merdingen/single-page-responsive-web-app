@@ -1,0 +1,21 @@
+.form-input-container {
+	padding: 20px 0;
+}
+
+.form-input {
+	width: 100%;
+	height: 45px;
+	border-radius: 5px;
+	padding: 0 10px;
+}
+
+.form-textarea-container {
+	padding: 20px 0;
+}
+
+.form-textarea {
+	width: 100%;
+	min-height: 150px;
+	border-radius: 5px;
+	padding: 5px 10px;
+}
